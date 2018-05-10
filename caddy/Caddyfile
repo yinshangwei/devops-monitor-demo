@@ -27,13 +27,3 @@
      errors stderr
      tls off
 }
-
-:8080 {
-    proxy / jenkins:8080 {
-            transparent
-            websocket
-        }
-
-    errors stderr
-    tls off
-}
